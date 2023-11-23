@@ -1,0 +1,40 @@
+
+    funcao idade()
+        entrada("Quantas idadades quer saber " , pessoa)
+        cada (elemento = 0 ; elemento < pessoa ; elemento++)
+            entrada("Em que ano você nasceu" , ano)
+            entrada("Em que ano você esta neste preciso momento" , atual)
+                idade = atual - ano 
+            imprime(idade)
+    
+
+imprime("Seja Bem-vindo á calculadora da idade: ")
+imprime("A sua idade é {idade()}")
+
+-----------------------------------------------------------------------------------------
+#Logica
+
+    funcao menu()
+        imprime("
+                    Bem-vindo á Calculadora de Idade
+                                Menu
+                    1. Calcular a idade
+                    2. Sair da Calculadora 
+                ")
+
+    funcnao execute()
+        se opcao == 1
+            entrada("Digite o ano em que nasceu: " , ano)
+            entrada("Digite o ano atual: " , atual)
+            idade = atual - ano 
+            imprime("A sua Idade é {idade}. ")
+            return menu();
+        senao 
+            imprime("Até  Breve!!!")
+            return;
+    
+
+#Execução
+menu()
+entrada("Escolha uma Opção: " ,opcao)
+execute()

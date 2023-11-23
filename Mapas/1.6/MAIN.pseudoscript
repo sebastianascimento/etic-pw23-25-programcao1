@@ -1,0 +1,68 @@
+
+    funcao add()
+        Lista.compras = []
+        entrada("Quantos produtos quer inserir na sua lista de compras" , produto )
+            soma.preço = 0
+            cada (elementos = 0 ; elementos < produtos ; elementos++)
+                entrada("Digite o nome do produto: " , nome)
+                entrada("Digite o valor do produto: " , preço)
+                    Lista.compras = [compras = ('nome' -> 'produto')]
+                        soma.preço += preço
+
+
+imprime("Bem-vindo a Listas de compras ")
+imprime("O total da sua Lista de compras é {add}")
+
+-------------------------------------------------------------
+
+    funcao(menu())
+        imprime("Prime 1 para ver a sua Lista de Abastecimento")
+        imprime("Prime 2 para adicionar um produto da sua Lista de Abastecimento")
+        imprime("Prime 3 para remover um produto da sua Lista de Abastecimento")
+        imprime("Prime 4 para sair da sua Lista de Abastecimento")
+
+    funcao(lista())
+        Lista.compras = []
+        imprime("A sua Lista de Abastecimento é {Lista.compras = []}")
+        compras.total = soma.preços - retirar.preços
+        imprime("O seu preço total da sua Lista de Abastecimentos {compras.total} ")
+
+
+    funcao(add())
+        soma.preço = 0
+        entrada("Digite o nome do produto: " , nome)
+        entrada("Digite o preço do produto: " , preço)
+            Lista.compras = [compras = ('nome' -> 'preço')]
+                soma.preço += preço
+            imprime("O seu produto foi adicionado a sua Lista de Abastecimento {Lista.compras = []}")
+    
+    funcao(rem())
+    retirar.custp = 0
+    entrada("Digite o nome do produto: " , produto)
+    entrada("Digite o nome do produto: " , custo)
+        Lista.compras = [compras = ('produto' -> 'custo')]
+            retirar.custo -= custo
+    imprime("O seu produto foi retirado com sucesso")
+
+    
+    funcao(out())
+        imprime("Até breve")
+        return;
+
+
+imprime("Bem-vindo a sua Lista de Abastecimento")
+imprime(menu())
+
+entrada("Opção: " , opcao)
+    se [opcao == 1]
+        imprime(lista())
+    senao [opcao == 2]
+        imprime(add())
+    senao [opcao == 3]
+        imprime(rem())
+    senao [opcao == 4]
+        imprime(out())
+
+
+
+

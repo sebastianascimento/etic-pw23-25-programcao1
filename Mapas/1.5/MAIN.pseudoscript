@@ -1,0 +1,43 @@
+
+    funcao menu()
+            imprime("
+                    Bem-vindo ao dicionario Portugues-Ingles
+                            Menu
+                1. para aceder ao nosso dicionario
+                2. para adicionar uma palavra
+                3. para sair do nosso dicinario
+                    ")
+    
+    
+    funcao tradutor()
+        dicinario.tradutor = [ ('Olá' -> 'Hello' , 'Adeus' -> 'Bye' , 'correr' -> 'run' , 'viajar' -> 'travel' , 'Amar' -> 'Love')]
+            entrada("Digite uma das seguintes palavras: " , nome )
+                se nome esta em dicinario.tradutor():
+                    imprime("A tradução de {chave} é {valor}.")
+                senao 
+                    imprime("A palavra nao se encontra no dicionario")
+    
+    funcao adicionar()
+        entrada("Digite a palavra que quer adicinar ao dicinario: " , palavra )
+        entrada("Digite a sua tradução:" traducao)
+            se palavra esta em dicinario.tradutor():
+                imprime("Esta palavra já existe no nosso dicinario.")
+            senao 
+            dicinario.tradutor[palavra] = traducao
+                imprime("A palavra {palavra} foi adicionado ao dicinario Portugês - Inglês com sucesso")
+            
+
+               
+
+
+menu()
+entrada ("Opção: " , opcao)
+    se [ opcao == 1]
+        imprime(tradutor())
+    senao [opcao == 2]
+        imprime(adicionar())
+    senao [opcao == 3]
+        imprime("Até breve!!!")
+        return;
+
+

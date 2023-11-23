@@ -1,0 +1,82 @@
+
+    funcao agenda()
+        Listatarefas = []
+            entrada("Quantas tarefas tem hoje?" , tarefas)
+            cada (agenda = 0 ; agenda < tarefas ; agenda++)
+                entrada ("Digite a tarefa: " , n)
+                    n = add Listas.tarefas
+                imprime (Listatarefas.tamanho)
+
+
+imprime("Bem-vindo a sua lista de tarefas:")
+imprime("A sua Lista de tarefas para hoje é {agenda()}")
+
+
+
+----------------------------------------------------------------------
+funcao menu()
+    imprime("Prime 1 para criar um compromisso")
+    imprime("Prime 2 para listar compromissos")
+    imprime("Prime 3 para ordernar o seus compromissos")
+    imprime("Prime 4 se concluio o seu compromisso")
+    imprime("Prima 5 se qusier sair ")
+
+funcao ordenar()
+    novoMapa = ()
+    listaAux = compromissos.chaves()
+    cada i em [0 ... listaAux.tamanho()]:
+        cada j  em [i + 1 ... listaAux.tamanho()]
+            se listaAux.tamanho[i] > listaAux[j]
+            temp = listaAux[i]
+    cada ordem em listaAux:
+    novoMapa[ordem] = compromisso[ordem]
+    compromisso() = novoMapa
+    
+
+
+
+funcao compromisso()
+    entrada("Descrição do compromisso: " , compromisso)
+    entrada("Qual a imporntancia da tarefa: " , ordem)
+        se [ordem esta em compromisso.chaves()]
+            imprime("Já existe uma tarefa com essa ordem")
+            return;
+        imprime(ordenar())
+        imprime("Tarefa inserida com sucesso!") 
+
+funcao listar()
+    ordenar()
+    cada order , task em compromissos
+            imprime("{oroder} - {task}")
+    
+
+funcao concluir()
+    entrada("Qual a tarefa a concluir ? " , concluir)
+    imprime(ordenar())
+    novoMapa = ()
+    cada chave , tarefa em compromissos():
+        se [chave != concluir]
+            novoMapa[chave] = tarefa 
+
+
+funcao executaropcao(opcao)
+    se [opcao == 1]
+        imprime (compromisso())
+    senao [opcao == 2]
+        imprime(lista())
+    senao [opcao == 3]
+        imprime(ordenar())
+    senao [opcao == 4]
+        imprime(concluir())
+    senao [opcao == 5]
+        imprime("Até Breve")
+        return;
+
+
+    
+imprime(menu())
+entrada("Selecione opção: " , opcao)
+imprime(executaropcao())
+
+
+

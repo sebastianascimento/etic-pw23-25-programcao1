@@ -1,0 +1,9 @@
+importar 1.7
+    
+    funcao projetos()
+        entrada("Qual é o nome do projeto: " , nome)
+        entrada("Digite a descrição do seu projeto" , descricao)
+        imprime({agenda()})
+
+imprime("Bem-Vindo ao seu Gestor de Projetos: ")
+imprime(projetos())

@@ -1,0 +1,126 @@
+
+#Logica
+    personagens = ()
+
+    funcao menu()
+        imprime("
+                        Bem-vindo ao Mundo Esquecido
+                                Menu
+                1.Criar uma personagem
+                2.Explorar o mundo 
+                3.Sair do jogo  
+                ")
+               
+    funco personagens()
+        entrada("Qual é o nome da personagem: " , nome)
+        entrada("Escolha uma das Classes da sua personagem , (Mago Mestre , Mercenário , Cavaleiro , Nobre e Ladino ) " , classe)
+        nivel = 1
+        vida = 100
+        coins = 50
+        imprime( "Nome : " nome ,"Classe:" classe , "Nivel: " nivel , "Vida:" vida ,"Coins: " , coins )
+
+    funcao explorar()
+        entrada("Digite o seu nome " , nome)
+            se [nome nao esta em  personagens()]
+                imprime("Você tem de criar uma personagem antes de explorar o Mundo Esquecido")
+                return menu();
+            senao
+                imprime("Explore o Mundo esquecido ")
+                imprime(decisao())
+
+
+    funcao decisao()
+        se nome nao esta em personagens ()
+            imprime("Você tem de criar uma personagem antes de explorar o Mundo Esquecido")
+            return menu();
+        senao 
+            imprime("
+                    Você encontra uma porta. O que faz?
+                 1 para entrar na porta
+                 2 para ignorar a porta
+                    ")
+
+            entrada("Opção: " , opcao)
+                se [opcao == 1]
+                    imprime("Você entra na porta e luta contra a bruxa! Você derrotou a bruxa!!")
+                    imprime("Parabêns!!")
+                    vida -= 15
+                    coins += 45
+                    nivel += 1
+                    imprime("Você têm {vida} vida e {coins} coins e o teu nivel é {nivel}")
+                senao opcao == 2
+                    imprime("Você ignorou a porta , continue o seu caminho" )
+            imprime("
+                        Um comerciante ambulante oferece-lhe uma poção misteriosa a 5 coins. 
+                        Você aceita a oferta ou recusa?
+                    A.Aceitar 
+                    B.Recusar
+                    ")
+            entrada("Opção: " , opcao)
+                se opcao == 'a' ou 'A'
+                    imprime("AHAHAHAH a poção era venenosa.")
+                    vida -=20
+                    coins -= 5
+                    imprime("Você têm {vida} vida e {coins} coins e o teu nivel é {nivel}")
+                senao 
+                    imprime("Continue o seu caminho pelo mundo estranho")
+            imprime("
+                     Um misterioso pergaminho mágico está trancado em um cofre.
+                     Você tenta decifrá-lo ou deixa-o para trás?  
+                     C.Ajudar
+                     D.Deixar para trás 
+                    ")
+            entrada("Opção: " , opcao)
+                se opcao == 'c' ou 'C'
+                    imprime("Boa o misterioso pergaminho magico ofereceu-te uma poçao de vida")
+                    vida += 50
+                    nivel += 1
+                    imprime("Você têm {vida} vida e {coins} coins e o teu nivel é {nivel}")
+                senao 
+                    imprime("O misterioso pergaminho magico mandou-te um feitiço")
+                    vida -= 20
+                    imprime("Você têm {vida} vida e {coins} coins e o teu nivel é {nivel}")
+            imprime("
+                    Você descobre uma passagem secreta em uma masmorra. 
+                    Escolha entre explorar a passagem ou continuar pelo caminho principal.
+                        E.Explorar a passagem
+                        f.Continuar o caminho
+                    ")
+            entrada("Opção: " , opcao)
+                se opcao == 'E' ou 'e'
+                    imprime("AHAHAH vai ter de enfrentar o Dragão Feroz")
+                    vida -= 30
+                    imprime("Você têm {vida} vida e {coins} coins e o teu nivel é {nivel}")
+                senao 
+                    imprime("Continue o seu caminho.")
+                    coins += 10 
+                    imprime("Você têm {vida} vida e {coins} coins e o teu nivel é {nivel}")
+            imprime("Fim do Mundo Esquesito.")
+            imprime(out())
+                
+           
+    funcao out()   
+        imprime("Espero ver-te em breve no Mundo Esquecido")
+        return;
+            
+
+
+            
+    funcao execute
+        se [opcao == 1]
+            imprime(personagens())
+        
+        senao [ opcao == 2]
+            imprime(explorar())
+        
+        senao [opcao == 3]
+            imprime(decisao())
+        
+        senao
+            imprime(out())
+
+#Execução
+menu()
+entrada("Escolha uma Opção: " , opcao)
+execute()
+

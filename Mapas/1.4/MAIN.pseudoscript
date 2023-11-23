@@ -1,0 +1,52 @@
+
+#Logica
+        funcao menu()
+                imprime("
+                        Bem-vindo ao StockPlus
+                                Menu
+                1. Adicionar Stock
+                2. Remover Stcok
+                3. Listar Stock
+                        ")
+modelo Stock()
+        Stock.list = ()
+
+        funcao Listever()
+                cada chave , valor em Stock.list():
+                        imprime("{chave} -> {valor}")
+
+        funcao execute(opcao)
+                se opcao == 1 
+                        entrada("Digite o nome do produto: " , add)
+                                se add esta em Stock.list.chaves()
+                                        imprime("Este produto já existe em StockPlus")
+                                        return menu();
+                                senao 
+                                        entrada("Digite a quantidade que gostaria adicionar desse produto" , quantidade)
+                                        Stock.list[add] = quantidade
+                                        imprime("O produto foi adicionado com sucesso")
+                se opcao == 2
+                        entrada("Digite o nome do produto: " rem)
+                                se rem nao esta em Stock.list.chaves():
+                                        imprime("Este produto nao existe em StcokPlus")
+                                        return menu();
+                                senao 
+                                        entrada("Digite a quantidade que gostaria de remover desse produto " , qual)
+                                        Stock.array = ()
+                                        cada chave, qual em Stock.list()
+                                                se chave != rem
+                                                        Stock.array[chave] = qual
+                                        imprime("O Seu produto foi retirado do StockPlus com sucesso")
+                se opcao == 3
+                        imprime("Vamos imprimir a sua lista.")
+                        Stock.Listever()
+                se opcao == 4
+                        imprime("Gosto em vê-lo. Até a Proxima!!!")
+                        return;
+
+#Execução
+menu()
+entrada("Escolha uma Opção: " , opcao)
+Stock.execute(opcao)
+
+

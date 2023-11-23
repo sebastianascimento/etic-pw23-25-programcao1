@@ -1,0 +1,33 @@
+#Logica
+    agenda = ()  
+        
+        funcao menu()
+            imprime("
+                    Welcome
+                1. Adicionar Contacto
+                2. Sair da Agenda    
+                    ")
+
+        funcao execute()
+        se opcao == 1
+            entrada("Digite o nome do contacto: " , nome)
+            entrada("Digite o numero do contacto: " , numero)
+            se numero esta em agenda():
+                imprime("Este numero ja existe. Por favor tente outra vez.")
+                return menu();
+            senao   
+                agendas[numero] = nome
+                imprime("O Contacto foi adicionado com sucesso.")
+        senao 
+            imprime("Até Breve!!")
+            return;
+
+
+#Execução
+menu()
+entrada("Escolha uma opção: " , opcao)
+execute()
+
+
+
+

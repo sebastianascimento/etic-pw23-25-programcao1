@@ -1,0 +1,82 @@
+
+bibloteca = ()
+
+    funcao menu()
+        imprime("
+                    Bem-vindo a MagicLibary
+                            Menu
+                1. Adicionar um livro
+                2. Pesquisar um livro 
+                3. Requesitar um livro 
+                4. Devolver o livro
+                5. Sair 
+                ")
+    
+    funcao prime()
+            entrada("Qual é o livro: " , livro)
+            entrada("Qual é a quantidade: " , quantidade)
+
+    funcao adicionar()
+            se livro esta em bibloteca.chaves():
+                bibloteca[livro] += quantidade
+                imprime("Obrigado por ajudar a sua MagicLibary. ")
+            senao 
+                bibloteca[livro] = quantidade
+                imprime("Obrigado por ajudar a sua MagicLibary. ")
+
+    
+    funcao pesquisar()
+            se livro , qunatidade esta em  bibloteca():
+                imprime("O seu livro esta disponivel na nossa bibloteca")
+            senao 
+                imprime("O seu livro não esta disponivel na nossa bibloteca ")
+                return menu();
+
+        
+    funcao emprestar() 
+            se livro esta em  bibloteca():
+                se quantidade <= bibloteca[livro]
+                    bibloteca[livro] -= quantidade
+                    imprime("O livro foi  emprestado")
+            senao
+                imprime("Desculpe , de momento o seu livro nao esta disponivel")
+                return menu();
+        
+    
+    funcao devolver()
+        entrada("Qual é o livro é o livro que quer devolver: " , livro)
+            se livro esta em bibloteca():
+                bibloteca[livro] += quantidade
+                imprime("O seu livro foi devolvido com sucesso.")
+            senao 
+                bibloteca[livro] = quantidade  
+                imprime("O seu livro foi adicinado com sucesso")
+    
+    funcao out()
+        imprime("Gosto em vê-lo na nossa MagicLibary. Até Breve.")
+        return;
+
+
+Execução
+menu()
+    entrada("Escolha uma Opcão: " , opcao)
+        se [opcao == 1]
+            imprime("Bem-vindo á opção adicionar um livro")
+            imprime(prime())
+            imprime(adicionar())
+        senao [opcao == 2]
+            imprime("Bem-vindo á opção pesquisar um livro")
+             imprime(prime())
+            imprime(pesquisar())
+        senao [opcao == 3]
+            imprime("Bem-vindo á opção de pedir um livro para emprestimo")
+             imprime(prime())
+            imprime(emprestar())
+        senao [opcao == 4]
+            imprime("Bem-vindo á opção de devolver um livro")
+             imprime(prime())
+            imprime(devolver())
+        senao 
+            imprime(out())
+            
+            

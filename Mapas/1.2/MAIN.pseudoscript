@@ -1,0 +1,36 @@
+#Lógica
+    Frequencia = ()
+    
+    funcao menu()
+        imprime("
+            1. Adicionar uma frase e Saber a contagem da frase.
+            2. Sair
+                ")
+
+    funcao execute()
+        se opcao == 1
+                entrada ("Digite uma frase: " , diga)
+                    cada letra esta em diga:
+                        se letra nao esta em Frequencia.chaves()
+                            Frequencia[letra] = 1
+                        senao 
+                            Frequencia[letra] += 1
+                    
+                    imprime("A Contagem de letras: ")
+                        cada letra em Frequencia.chaves
+                            imprime("{chave} -> {valor} ")
+        se opcao == 2 
+            imprime("Até Breve!!")
+            return;
+
+
+                
+
+
+
+
+
+#Execução
+menu()
+entrada("Escolha uma opção: " , opcao)
+execute()

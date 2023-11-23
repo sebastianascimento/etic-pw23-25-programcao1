@@ -1,0 +1,73 @@
+
+#Logica
+voos = ()
+hoteis = ()
+carros = ()
+
+        funcao reservas()
+                imprime("
+                        Bem-vindo ao Viagens Pro
+                            Menu
+                    1 para reservar o seu voo
+                    2 para reservar o seu hotel
+                    3 para alugar um carro
+                    4 para sair do Sistemas de reservas
+                        ")
+
+        funcao voos() (origem , destino , data , passageiros , maximo)
+            se origem || destino || data nao esta em voos()
+                maximo = 189
+                se [disponivel >= maximo ]
+                    disponivel -= maximo
+                        imprime ("A reserva foi feita de partida {origem} com destino {destino} nas datas {datas} com o numero dos passageiros {disponivel}")
+                senao 
+                        imprime("Nao existem voos disponiveis ")
+                        return menu();
+                
+        funcao hotel(cidade , quarto)
+            se [cidade || quarto nao esta em  hoteis()]
+                    maximo de quartos = 250
+                    se quartos disponiveis >= maximo de quartos
+                            quartos disponiveis -= maximo de quartos 
+                                imprime("Reserva de hotel na cidade {cidade} com {quarto} quartos.")
+                    senao 
+                        imprime("Não existe hotel disponivel")
+                        return menu();
+        
+        funcao carro()
+            se [carro || modelo nao esta em carros()]
+                maximo de carros = 300
+                se carros disponiveis >= maximo de carros 
+                    carros disponiveis -= maximo de carros 
+                        imprime("Reserva de carro feita com sucesso")
+                senao 
+                    imprime("O carro desejado não está disponivel")
+                    return menu();
+
+            se [opcao == 1]
+                entrada("Digite a cidade de origem: " , origem)
+                entrada("Digite a cidade destino: " , destino)
+                entrada("Digite a data de viagem: " , data)
+                entrada("Digite o numero de passageiros" , disponivel)
+                imprime(voos())
+            senao [opcao == 2]
+                entrada("Digite a cidade do hotel" , cidade)
+                entrada("Digite o numero de quartos desejados: " , quarto)
+                imprime(hotel())
+            senao [opcao == 3]
+                entrada("Digite a marca do carro: " , carro)
+                entrada("Digite o modelo do carro: " , modelo)
+                imprime(carro())
+            senao [opcao == 4]
+                imprime("Obrigado por usar Viagens Pro. Até a Proxima")
+                return;
+            senao
+                imprime("Opção inválida. Tente novamente.")
+
+#Execução
+menu()
+entrada("Escolha uma Opção: " , opcao)
+reservas()
+
+
+                

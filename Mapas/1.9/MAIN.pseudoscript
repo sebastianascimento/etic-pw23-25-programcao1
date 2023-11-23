@@ -1,0 +1,77 @@
+
+        funcao ranking()
+            entrada("Quantos jogadores participaram: ", jogadores)
+            
+            Listajogadores = []
+            
+            cada (elemento = 0 ; elementos < jogadores ; elementos++ )
+                entrada("Qual é o nome do jogador: " , nome )
+                entrada("Qual é a sua pontuação: " , pontuaçao)
+                Listajogadores = [pontuações = nome -> pontuaçao]
+
+
+imprime ("Seja bem-vindo ao Ranking de pontuações")
+imprime("Os 5 melhores resultados são: {ranking{}}")
+
+-----------------------------------------------------------------------------------------------------------
+ #Logica
+
+    Listajogadores = ()
+
+    funcao menu()
+            imprime("
+                        Bem-vindo ao jogo Super Surf Ranking
+                                    Menu
+            1 para ver qunatos jogadores estão no Super Surf Ranking
+            2 para adicionar jogadores estão no Super Surf Ranking
+            3 para ver os melhores no Super Surf Ranking
+            4 para sair no Super Surf Ranking
+                    ")
+    
+    funcao surf()
+        imprime("Os jogadores que estão no Super Surf Ranking são {Listajogadores()}")
+
+    funcao add()
+        entrada("Qual é o jogador que  quer adicionar alguem no Super Surf Ranking:" , adicionar)
+        entrada("Qual é a pontuação deste jogador: " , point )
+        se [adicionar esta em Listajogadores()]
+            imprime("O jogador {adiccionar} já existe no Super Surf Ranking")
+            return menu();
+        senao
+            Listajogadores[adiccionar]
+            imprime("O jogador {adicionar} foi adicionado ao Super Surf Ranking com sucesso")
+
+    funcao order()
+        novalista = ()
+        listaSurf = Listajogadores.chaves()
+        cada i em [0 ... listaSurf.tamanho()]
+            cada j em [i + 1 ... listaSurf.tamanho()]
+                se listaSurf[i] > listaSurf[j]:
+                    ranking = listaSurf[j]
+                    listSurf[i] = ranking 
+        cada [adicionar esta listaSurf()]
+            novalista[adicionar] = listaSurf[point]
+            Listajogadores() = novalista()
+            imprime("Os jogadores com melhores pontuações são {Listajogadores()}")
+        
+    funcao out()
+        imprime("Até breve")
+        return;
+
+
+    funcao executar()
+        se [opcao == 1]
+            imprime(surf())
+        senao [ opcao == 2]
+            imprime(add())
+        senao [ opcao == 3]
+            imprime(order())
+        senao [opcao == 4]
+            imprime(out())
+
+
+menu()
+entrada("Selecione opção: " , opcao)
+executar()
+
+

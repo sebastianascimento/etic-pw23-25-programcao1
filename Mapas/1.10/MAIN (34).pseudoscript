@@ -1,0 +1,52 @@
+
+    funcao sinonimo()
+        entrada("Digite uma palavra: " , palavra)
+            sinonimo  = ('Levantar' -> 'Erguer' ,  'Baixar' -> 'Desça' , 'Perfeito' -> 'Magnificos' , 'Informar' -> 'Avisar' , 'Comunicar' -> 'Divulgar') 
+                se [palavra == sinonimo]
+                    imprime("O sinonimo é " , sinonimo)
+                    entrada("Quer adicionar mais algum sinonimo a esta palavra" , mais)
+                senao 
+                    imprime("Não tenho nenhum sinonimo para essa palavra ")
+                    entrada("Quer adicionar um sinonimo:" , adicionar)
+                
+            imprime(sinonimo.palavra.add)
+
+imprime("Bem-vindo ao Dicionario de Sinonimos")
+imprime({sinonimo()})
+
+=======================================================================================================
+#Logica
+    List.sin = ()
+    funcao menu()
+        imprime("
+                    Bem-vindo ao Dicionario de Sinonimos.
+                                Menu
+                    1.Procurar Sinonimo
+                    2.Adicionar um Sinonimo
+                    3. Sair
+                ")
+    funcao execute()
+        se opcao == 1
+            entrada("Digite uma palavra: ", palavra)
+                se sinonimo esta em List.sin():
+                    imprime("{palavra} -> {sinonimo} ")
+                senao 
+                    imprime("Essa palavra nao se encontra no nosso dicinario.")
+                    return menu();
+        se opcao == 2
+            entrada("Digite a palavra que quer adicionar: " , add)
+                se add esta em List.sin():
+                    imprime("Essa palavra ja se encontra no nosso Dicinario. ")
+                senao
+                    entrada("Digite o sinonimo: " , sinonimo)
+                    List.sin[add] = sinonimo
+                    imprime("A sua palavra foi adicionada com sucesso.")
+        se opcao == 3
+            imprime("Até Breve!!!")
+            retunr;
+
+
+#Execução
+menu()
+entrada("Escolha uma Opção: " , opcao)~
+execute()

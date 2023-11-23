@@ -1,0 +1,74 @@
+
+    funcao saldo()
+        entrada("Quantas despesas você têm: " , despesas)
+        soma.despesas = 0
+        cada (elemento = 0 ; elemento < despesas ; elementos++)
+            entrada("Qual é o nome da despesas " , nome)
+            entrada("Qual é o valor da despesas " , valor)
+            soma.despesas += despecas
+        entrada("Qual é a sua receita: " , receita)
+        saldo = 0
+        saldo = receita - soma.despecas
+        imprime(saldo)
+
+imprime("Bem-Vindo ao seu saldo bancario ")
+imprime("O seu saldo é {saldo()}")
+
+
+======================================================================================0´
+    gasto= ()
+    ganho = ()
+
+    funcao menu()
+        imprime("
+                Bem-vindo ao seu saldo
+                        Menu
+            1. Adicinar uma despesa 
+            2. Adicionar a sua receita
+            3. Retirar uma despesa
+            4. Ver o seu saldo
+            5. Sair
+                ")
+    funcao execute()
+        se opcao == 1
+            entrada("Qual é a despesa: " , despesa)
+            entrada("Qual foi o preço da  despesa: " , preco)
+                se despesa esta em gasto.chaves():
+                    gasto[despesa] += preco
+                    imprime("A sua despesa foi adicionada com sucesso.")
+                senao
+                    gasto[despesa] = preco
+                    imprime("A sua despesa foi adicionada com sucesso.")
+        se opcao == 2
+            entrada("Qual é a receita: " , receita)
+            entrada("Qual foi o valor da  receita: " , valor)
+                se receita esta em ganho.chaves():
+                    ganho[receita] += valor
+                    imprime("A sua receita foi adicionada com sucesso.")
+                senao
+                    ganho[receita] = valor
+                    imprime("A sua receita foi adicionada com sucesso.")
+        se opcao == 3
+             entrada("Qual é a despesa que dejesa retirar: " , retirar)
+             entrada("Qual foi o preço da despesa: " , preco)
+                se retirar esta em gasto.chaves():
+                    gasto[retirar] -= preco
+                    imprime("A sua despesa foi retirada com suceso.")
+                senao  
+                    imprime("A sua despesa é inexistente.")
+                    return menu();
+        se opcao == 4
+            saldo = 0
+                cada chave em ganho.chaves():
+                    saldo += ganho[chave]
+                cada chvae em gasto.chaves():
+                    saldo -= gasto[chave]
+            imprime("O seu saldo é {saldo}")
+        se opcao == 5
+            imprime("Obrigado por utilizar a nossa aplicação.")
+            return;
+    
+menu()
+entrada("Escolha uma opção: " , opcao)
+execute()
+

@@ -1,0 +1,79 @@
+
+
+    funcao media()
+        entrada("Quantos alunos tem a turma: " , aluno)
+        somadasnotas = 0  
+        cada (elemento = 0 ; elemento < aluno ; elemento++) 
+            entrada("Digite o valor da nota: " , nota)
+                 somadasnotas += nota
+
+        media = somadasnotas / alunos 
+
+    
+
+
+imprime("Bem-vindo")
+imprime("Iremos calcular a media da turma na disciplina de programação")
+imrpime("A media da turma na disciplina de programação é de {media}")
+
+====================================================================================
+#Logica
+
+modelo Turmamed
+    construtor():
+        Turmamed.list = ()
+        somadasnotas = 0
+        somadasnotas1 = 0
+funcao menu()
+    imprime("
+            Bem-vindo á media na disiciplina de programação
+                        Menu
+            1- Adicionar aluno 
+            2- Á Ver a media de um aluno
+            3- Á media dos alunos 
+            4- Sair
+            ")
+
+funcao execute()
+        
+        se opcao == 1
+            entrada("Digite o nome do aluno que deseja adicionar: " , aluno)
+                se aluno esta em Turmamed.list():
+                    imprime("Esse aluno já existe na turma.")
+                    return menu();
+                senao 
+                    imprime("O aluno foi adicionado a turma com sucesso")
+        se opcao == 2
+            entrada("Digite o nome do aluno que deseja ver a media: " , aluno1)
+                se aluno1 nao esta em Turmamed.list():
+                    imprime("Esse aluno não existe na turma.")
+                    return menu();
+                senao 
+                    cada(n = 1 ; n < 4 ; n++)
+                        entrada("Digite o valor da nota no {n}º Periodo" , nota)
+                        somadasnotas += nota
+                mediaal = somadasnotas / 3 
+                imprime("A media do aluno {aluno1} é de {mediaal}")
+        se opcao == 3 
+            entrada("Digite quantos alunos tem a turma: " , quanto)
+                cada(i = 0 ; i < quanto ; i++)
+                    cada(x = 1 ; x < 4 ; x++)
+                        entrada("Digite o valor da nota no {n}º Periodo" , nota1)
+                        somadasnotas1 += nota1
+                media1 = somadasnotas1 /3
+            mediatotal = media1 / quanto
+            imprime("A media total da turma é de {mediatotal}")
+        se opcao == 4 
+            imprime("Até Breve!!!")
+            return;
+
+
+                    
+
+
+#Execução
+menu()
+entrada("Escolha uma Opção: " , opcao)
+Turmamed.execute()
+
+
