@@ -1,0 +1,59 @@
+
+   funcao menutransicao()
+        imprime("
+    ========================================================================
+                            Transições
+    =======================================================================
+    --------------------------MENU-----------------------------------------
+        1. Transições Totais
+        2. Transições por Categoria
+        3. Menu Principal 
+    ----------------------------------------------------------------------- 
+                ")
+
+
+    funcao transicao()
+        tratotais()
+                imprime("
+    ======================================================================
+                            Transições Totais
+    =======================================================================
+                                ")
+            cada gasta em financas.total.chaves()
+                imprime("
+        
+        {gasta} -> {resultado}
+                        
+                        ")
+
+    
+
+    funcao tracategoria()
+        catetotais()
+            imprime("
+    =======================================================================
+                            Transições por Categoria
+    =======================================================================
+                    ")
+        cada categoria em financas.categoriatotal.chaves()
+                imprime("
+
+        {categoria} -> {resultado}
+
+                    ")
+
+    funcao executetra()
+        se uma == 1
+            transicao()
+        se uma == 2
+            tracategoria()
+        se uma == 3
+            menu()
+        senao 
+            imprime("Erro.")
+            return menu();
+
+            
+
+
+    

@@ -1,0 +1,51 @@
+
+===========================================================================================
+===========================================================================================
+                    Manual Utilizador 
+O FinanceFlow é uma app que controla as suas finanças pessoais.
+Esta App tem como objetivo de orientar e verificar os seus movimentos.
+FinanceFlow contem:
+    -Menu principal 
+    -Menu de Movimentos
+    -Menu de Transações
+
+Menu Principal:
+    -Adicionar os seus movimentos
+    -Ter acesso aos outros menus
+
+Menu de Movimentos: 
+    -Apresenta todos os seus movimentos.
+    -Apresenta todos os seus movimentos por categoria
+
+Menu de Transações: 
+    -Apresenta todos as suas transações mostrando o seu saldo
+    -Apresenta todas as suas transações mostrando o seu saldo por categoria
+
+============================================================================================
+============================================================================================
+
+   -------------------- Analise do Codigo -----------------------------------------------
+    
+    Decidi dar o nome da minha App de FinanceFLow
+
+Utilizei uma funçao para mostrar ao utilizador o menu
+Utilizei outra funcao para executar cada opção do menu
+
+
+Utilizei dois modelos
+    Um modelo para guardar a soma de todos os movimentos.
+    O outro para guardar todos os seus movimentos com todas as suas espesificaçoes
+
+Utilizei uma função para adicionar e armazenar movimentos
+Utilizei outra função que tem como objetivo ter o valor correto se o utilizador se enganar
+Utilizei mais duas funçoes com a funcionalidade de somar os movimentos~
+
+Utilzei outra funçao para demonstrar o Menu dos movimentos 
+Utilizei mais duas funcao para o Utilizador visualizar os seus movimentos totais e por categorias 
+
+Utilizei outra funçao para demonstrar o Menu das transações
+Utilizei mais duas funções para o Utilizador visualizar o seu saldo e varios saldos por categoria
+
+===================================================================================================
+===================================================================================================
+

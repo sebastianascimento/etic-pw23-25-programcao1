@@ -1,0 +1,50 @@
+    importar despesa
+    importar movimentos
+    importar transi
+
+ #Logica    
+    funcao menu():
+        imprime("
+        ==================================================
+                        Welcome FinanceFLow
+        ==================================================
+         ------------------- Menu --------------------------
+                    1. Adicionar uma Despesa
+                    2. Ver Movimentos
+                    3. Ver as Transições 
+                    4. Sair
+         ---------------------------------------------------- 
+                ")
+    
+    funcao execute()
+        se opcao == 1
+            gasto()
+            move()
+        se opcao == 2
+            menumovimentos()
+            entrada("Escolha uma Opção: " , escolha)
+            executemovi()
+        se opcao == 3
+            menutransicao()
+            entrada("Escolha uma Opção: " , uma)
+            executetra()
+        senao
+            imprime("
+        ============================================================
+                        Obrigado por Utilizar a FinanceFlow
+        ============================================================
+                                Até a Proxima!!!
+        ============================================================
+                    ")
+        return;
+
+
+
+#Execuçao
+menu()
+entrada("Escolha uma Opção: " , opcao)
+execute()
+            
+
+
+    

@@ -1,0 +1,46 @@
+
+
+
+modelo financas()
+        construtor():
+            financas.total = ()
+            financas.categoriatotal = ()
+
+modelo movimentos()
+        movimentos.todo = [gasta , debito , valor , catgeoria , descricao]
+
+        funcao gasto()
+        entrada("Digite qual é  a Transação: " , gasta)
+        entrada("Despesa ou Receita
+                 Se for uma Despesa digite d 
+                 Se for uma Receita digite r:  " debito)
+        entrada("Digite o valor: " , valor)
+        entrada("Digite a categoria: " , categoria)
+        entrada("Digite uma descrição a Despesa: " , descricao)   
+            movimentos.todo.adicionar(gasta, debito , categoria , descriçao) = valor
+            imprime("O sue movimento foi adicionado com sucesso")
+
+    
+    funcao move()
+        cada debito em movimentos.todo()
+            resultado = 0
+            se debito == "d"
+                se "d" > 0 
+                    resultado = valor * (-1)
+                    movimentos.todo.(debito) = resultado
+                senao 
+                    movimentos.todo(debito) = valor
+            se debito == "r"
+                se "r" < 0
+                    resultado = valor * (-1)
+                    movimentos.todo.(debito) = resultado
+                senao 
+                    movimentos.todo(debito) = valor 
+        
+    funcao tratotais()
+            cada gasta em movimentos.todo()
+                fincancas.total[gasta] += resultado
+
+    funcao catetotais()
+            cada gasta em movimentos.todo()
+                financas.categoriatotal[categoria] += resultado

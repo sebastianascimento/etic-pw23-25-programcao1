@@ -1,0 +1,52 @@
+
+
+    funcao menumovimentos()
+        imprime("
+    ====================================================
+                       Movimentos
+    ====================================================
+    ------------------ Menu ----------------------------
+        1. Movimentos 
+        2. Movimentos por Categoria
+        3. Menu Principal
+    ----------------------------------------------------
+                ")
+
+    
+    funcao movimentos()
+                  imprime("
+    ====================================================
+                       Movimentos
+    ====================================================
+                        ")
+        cada gasta em movimentos.todo():
+            imprime("
+
+        {gasta} -> {resultado} -> {categoria} -> {descricao}
+                    
+                    ")
+
+
+    funcao categoria()
+                imprime("
+    ======================================================
+                       Movimentos Categorias
+    ======================================================
+                        ")
+        cada categoria em movimentos.todo():
+            imprime("
+
+        {categoria} -> {resultado} -> {descricao}
+                    
+                    ")
+    
+    funcao executemovi()
+        se escolha == 1
+            movimentos()
+        se escolha == 2
+            categoria()
+        se escolha == 3
+            menu()
+        senao 
+            imprime("Erro.")
+            return menu();
