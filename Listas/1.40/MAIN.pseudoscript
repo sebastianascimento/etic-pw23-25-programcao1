@@ -1,0 +1,16 @@
+
+    funcao string()
+        Lista = []
+        palavra = " "
+            cada caracter em Listaorg()
+                se caracter== " "
+                    Lista += [palavra]
+                    palavra = " "
+                senao
+                    palavra += caracter
+            se palavra != " "
+                Lista = [palavra]
+
+Listaorg = ["Olá Manuel"]
+string()
+imprime("A lista de palavras é: {Lista}")

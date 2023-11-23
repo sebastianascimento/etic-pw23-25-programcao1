@@ -1,0 +1,11 @@
+
+    funcao vogais()
+        Lista = [Emanuel]
+        contagem = 0
+            cada elemento em Lista():   
+                se elemento esta em Lista()
+                    contagem += contagem 
+        resultado = contagem
+
+vogais()
+imprime("O numero de vogais é {resultado}")

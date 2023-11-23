@@ -1,0 +1,11 @@
+
+Lista = [ 1 , 5 , 6 , 8 , 4 , 9]
+
+soma = 0
+
+    cada elemento em Lista():
+        soma += elemento
+
+media = soma / Lista.tamanho()
+
+imprime("A media da Lista é: {media}")

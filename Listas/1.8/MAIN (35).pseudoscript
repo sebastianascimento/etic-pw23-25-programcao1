@@ -1,0 +1,11 @@
+
+    minhaLista = [ 1 , 2 , 3 , 4 , 5]
+
+
+entrada("Escolha um valor: " , s)
+     se ( minhaLista = [s])
+        imprime("Este numero esta  dentro da lista")
+    senao
+        imprime("Este numero nao esta dentro da lsita")  
+
+

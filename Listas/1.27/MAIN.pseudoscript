@@ -1,0 +1,9 @@
+
+Lista()    
+    entrada("Digite quantos numeros quer na sua lista." , numero)
+        cada (elemento = 0 ; elemento < numero , elemento++)
+            entrada("Digite um valor: " , valor)
+                Lista[valor]
+
+    imprime("A sua Lista é {Lista}")
+

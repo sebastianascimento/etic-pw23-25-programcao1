@@ -1,0 +1,15 @@
+
+    funcao palindromo()
+        tamanho = Lista.tamanho()
+            cada i em [0..tamanho]
+                se Lista[i] != Lista[tamanho -1 -i]
+                    return false;
+            return true;    
+
+
+Lista = [ 1 , 2 , 3 , 4 , 7 , 4, 3 ]
+imprime("A lista é {Lista}")
+    se palindromo == true
+        imprime("A Lista é um palindromo.")
+    senao 
+        imprime("A Lista não é um palindromo.")

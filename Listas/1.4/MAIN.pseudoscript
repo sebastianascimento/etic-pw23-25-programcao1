@@ -1,0 +1,30 @@
+
+    Lista1 = [1 , 2 , 3 , 4 , 5]
+    
+    
+imprime(" A sua lista é: {Lista1}")
+
+novalista = Lista1
+novalista[2] = 6
+
+imprime("A sua nova lista é: {novalsita}")
+
+------------------------------------------------------
+
+    Lista1 = [numero]
+
+    entrada("Quantos elementos quer na sua lista: " , numero)
+
+    cada (elemento = 0 ; elemento < numero , elemento++)
+        entrada("Digite um valor: " , elemento)
+
+    novalista = Lista1 
+    
+    entrada("Digite um outro numero para a sua nova lista: " , novonumero)
+
+    novalista [2] = novonumero 
+
+    imprime("A sua nova lista é: {novalista[2]}")
+    
+
+

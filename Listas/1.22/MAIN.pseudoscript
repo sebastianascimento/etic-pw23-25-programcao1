@@ -1,0 +1,18 @@
+
+Lista =  [1 , 8 , 5 , 6 , 4 , 9 , 10 , 2 , 3]
+
+Lista_new = []
+
+imprime("A sua Lista é [Lista]")
+
+    cada i em [0 .. Lista.tamanho()]
+        cada j em [i+1.. Lista.tamanho()]
+            se Lista[i] > List[j]:
+            novo = Lista[j]
+            Lista[j] = Lista[i]
+            Lista[i] = novo
+    cada elemento em Lista()
+        Lista_new[elemento] = Lista[elemento]
+        Lista = Lista_new
+
+imprime("A sua Lista ordenada: {Lista_new}")

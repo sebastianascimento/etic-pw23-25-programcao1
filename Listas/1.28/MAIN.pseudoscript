@@ -1,0 +1,18 @@
+
+    funcao somar()
+        Lista = []
+            cada i [0..Lista.tamanho()]
+                cada j [0..Lista.tamanho()]
+                    soma= matriz1[i][j] + matriz2[i][j]
+                        Lista = [soma]
+                        return Lista
+        
+matriz1 = [[1 , 4 ,7] [ 9 , 3 , 2]]
+matriz2 = [[2 , 5 ,3] [ 4 , 2 , 8]]
+
+        se matriz1 != matriz2 
+            imprime("As matrizes nao tem numeros iguais.")
+        senao
+            somar()
+                imprime("As suas listas são: {Lista}")
+                

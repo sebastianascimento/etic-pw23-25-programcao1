@@ -1,0 +1,7 @@
+
+funcao semana()
+    minhaLista = [segunda , terça ,quarta , quinta, sexta , sabado , domingo]
+
+
+minhaLista()
+imprime("A Lista é  {minhaLista}")    

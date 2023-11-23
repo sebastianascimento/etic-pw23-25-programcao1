@@ -1,0 +1,17 @@
+
+    funcao ordenar()
+         cada i em [0..Lista.tamanho()-1]:
+            cada j em [i+1..Lista.tamanho()]:
+                se Lista[i] > Lista[j]:
+                           
+
+Lista = [3 , 5 , 8 , 1 , 10 , 15 , 34 , 32]
+
+
+ordenar()
+    se ordernar == true
+        imprime("A sua Lista está organizada.")
+    senao 
+        imprime("A sua Lista não está organizada.")
+
+

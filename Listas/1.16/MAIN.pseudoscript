@@ -1,0 +1,9 @@
+
+funcao array()
+    minhaLista = [ 1 , 2 , 3 , 4 , 5 ]
+    minhaLista1 = []
+
+        cada elemento em em minhaLista 
+            minhaLista [] = minhaLista1
+        
+    imprime("A sua Lista copiada é {minhaLista1}")

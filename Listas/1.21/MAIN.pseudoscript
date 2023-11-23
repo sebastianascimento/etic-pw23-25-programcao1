@@ -1,0 +1,18 @@
+
+Lista = [ 14 , 18 , 15 , 16 , 25]
+
+imprime("A sua Lista é {Lista}")
+
+entrada("Escolha um valor dentro da Lista: " , valor)
+
+elemento = 0
+
+    se valor esta em Lista():    
+        cada elemento em Lista.tamanho():
+            se elemento == Lista[valor]
+    senao
+        imprime("Esse valor nao se encontra na Lista.")
+
+imprime("O seu {valor} esta na possição {elemento}")
+
+

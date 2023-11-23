@@ -1,0 +1,12 @@
+
+    funcao tranportar()
+        matriznew = []
+            cada i [0.. matrizor.tamanho()]
+                cada j [0 .. matrizor.tamanho()]
+                    matriznew = [i][j]
+
+
+
+matrizor = [ 4 , 8 , 6 , 2 , 6]
+transportar()
+imprime("A matriz original é {matrizor} e a matriz transportada é {matriznew}")

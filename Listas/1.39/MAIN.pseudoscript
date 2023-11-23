@@ -1,0 +1,16 @@
+
+    funcao string()
+        cada carater em Lista()
+            se caracter == letra1
+                resultado += letra1
+            senao 
+                resultado += caracter
+        Lista1 = resultado
+        
+
+Lista = [Manuela]
+letra1 = "a"
+letra2 = "o"
+string()
+imprime("String 1 é : {Lista}")
+imprime("String 2 é : {Lista1}")

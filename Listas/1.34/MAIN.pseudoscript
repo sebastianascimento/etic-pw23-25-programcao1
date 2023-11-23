@@ -1,0 +1,16 @@
+
+    funcao rotacionar()
+        tamanho = Lista.tamanho()
+            cada i em [0..tamanho]
+                ultimo = Lista[tamanho -1]
+                cada j de [tamanho..1]
+                    Lista[j] = Lista[j - 1]
+        Lista[0] = ultimo
+            
+
+
+
+Lista = [ 3 , 5 , 7 , 12 , 3 , 2]
+imprime("A sua Lista : {Lista}")
+rotacionar()
+imprime("A sua Lista apos a Rotação: {Lista}")

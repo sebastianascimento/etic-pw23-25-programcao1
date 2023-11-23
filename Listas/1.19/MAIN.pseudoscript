@@ -1,0 +1,10 @@
+
+Lista = [ 1 , 4 , 5 , 6 , 8 , 10 ]
+
+maximo = Lista[0]
+
+    cada elemento em Lista():
+        se elemento > maximo
+            maximo = elemento 
+
+imprime("O maior valor da Lista é {maximo}")

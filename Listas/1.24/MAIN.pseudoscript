@@ -1,0 +1,23 @@
+
+    funcao binaria()
+        prime = 0
+        second = first.tamanho() -1
+
+            enquanto prime <= second 
+                despu = (prime + second) / 2
+        
+            se first[despu] == valor
+                return despu
+            senao  first[despu] < valor
+                prime = despu + 1
+            senao 
+                second = despu - 1
+
+first = [1 , 6 , 5 , 9 , 14 , 17 , 12 , 19]
+entrada("Escolha um valor dentro do array?" , valor )
+
+    se valor nao esta em first():
+        imprime(Esse valor nao esta na Lista)
+    senao 
+        meta = binaria(first , valor)
+        imprime("O valor {valor} esta na posicação {meta} ")

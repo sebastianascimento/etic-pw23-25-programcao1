@@ -1,0 +1,9 @@
+
+     matriz = [
+        [7 , 9 , 14]
+        [9 , 1 , 22]
+        [8 , 2 , 36]
+        ]
+
+imprime("A sua Lista é {matriz}")
+

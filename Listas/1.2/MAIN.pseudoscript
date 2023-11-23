@@ -1,0 +1,20 @@
+
+funcao lista ()
+    Lista1 = [1 , 2 , 3 , 4 , 5 ]
+
+
+imprime ("A sua lista é {Lista1}")
+
+------------------------------------------
+
+
+funcao lista2 ()
+    cada (elemento = 0 , elemento < 5 , elemento++)
+        entrada("Digite um numero: ", elemento)
+
+
+lista2()  
+imprime("A sua lista é: {lista2}")
+
+
+

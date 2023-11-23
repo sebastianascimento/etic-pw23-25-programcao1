@@ -1,0 +1,12 @@
+
+    funcao inverter()
+        tamanho = lista.tamanho()
+        inverter = []
+            cada i em [0..tamanho]
+                inverter += lista[i]
+        resultado = inverter
+
+lista = [anabela]
+inverter()
+imprime("A lista invertida é : {resultado}")
+

@@ -1,0 +1,38 @@
+
+    funcao binaria()
+        prime = 0
+        
+    enqunato prime <= Lista.tamanho()
+        metade = (prime + Lista.tamanho()) / 2 
+            se Lista[metade] == valor  
+                return metade
+            senao Lista[meio] < valor 
+                prime = metade + 1
+            senao
+                Lista.tamanho() = metade - 1
+
+    funcao ordenar()
+        Listanew = []
+        cada i em [0.. Lista.tamanho()]
+            cada j em [i + 1 .. LIsta.tamanho()]
+                se Lista[i] > Lista[j] 
+                    num = Lista[j]
+                    Lista[j] = Lista[i]
+                    Lista[i] = num
+        cada elemento em Lista():
+            Listanew  = [elemento]
+
+            
+
+Lista = [ 3 , 5 , 8 , 1 , 5 , 10]
+imprime("Bem-vindo a Pesquisa Binaria")
+imprime("A Lista é: {Lista}")
+ordenar()
+imprime("A sua Lista ordenada: {Listanew}")
+entrada("Digite um valor dentro da Lista: " , valor)
+    se valor nao esta em Lista():
+        imprime("O valor não esta em Lista.")
+    senao 
+        binaria()
+        imprime("O valor {valor} está na posiçao {prime}")
+        

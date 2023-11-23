@@ -1,0 +1,8 @@
+
+funcao lista ()
+    Lista1 = []
+
+
+lista()
+imprime("A sua lista é {Lista1}")
+

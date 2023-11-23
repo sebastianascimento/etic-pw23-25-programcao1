@@ -1,0 +1,11 @@
+
+#Logica
+    funcao Lista()
+        Lista1 = [1...10]
+        
+        
+
+
+#Execução
+Lista()
+imprime("A sua lista é : {Lista1}")

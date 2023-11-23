@@ -1,0 +1,20 @@
+
+funcao lista()
+    Lista1 = [1 , 2 , 3 , 4 , 5]
+    Lsita1[2]
+
+imprime ("O terceiro elemento da Lista é {lista}")
+
+
+-----------------------------------------------
+
+funcao lista1()
+    Lista = []
+    entrada("Quantos elementos quer na sua lista: ", n)
+    cada ( elemento = 0 ; elemento < n ; elemento++)
+        entrada("Digite um numero: " , elemento)
+    
+    Lista[2]
+
+lista1()
+imprime("O terceiro elemento da Lista é {Lista[2]}")

@@ -1,0 +1,11 @@
+
+minhaLista = [ 1 , 2 , 3 , 4]
+minhaLista2 = [ 1 , 2 , 3 , 4]
+
+funcao somar (minhaLista , minhaLista2)
+    resultado = minhaLista + minhaLista2
+
+
+somar()
+imprime("A soma das duas Listas é {resultado}")
+

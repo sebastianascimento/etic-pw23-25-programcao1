@@ -1,0 +1,25 @@
+
+funcao Lista()
+    Lista1 = [1 , 2  , 3 , 4 , 5]
+
+imprime("A sua lista é: {Lista}")
+
+novalista = lista.tamanho() + 1 
+
+Lista()
+imprime("A sua nova lista é: {novalista}")
+===================================================
+
+funcao Lista()
+    Lista1 = ()
+        
+        cada (elemento = 0 ; elemento < 5 ; elemento++)
+            entrada("Digite um valor" , valor)
+            Lista1 = [valor]
+        
+    entrada("Digite um novo numero: " , novo)
+
+    novalista = lista.tamanho() + novo
+
+Lista()
+imprime("A sua nova lista é {novalista}")

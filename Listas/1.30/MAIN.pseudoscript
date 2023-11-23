@@ -1,0 +1,19 @@
+
+
+    funcao ordenar()
+        cada i [0 ..Lista.tamanho()]
+            cada j[0..Lista.tamanho()]
+                se Lista[i] > Lista[j]
+                    new = Lista[i]
+                    Lista[i] = Lista[j]
+                    Lista[j] = new
+
+Lista = [ 34 , 21 , 56 , 8 , 45]
+
+imprime(" A Lista original é {Lista}")
+
+ordenar()
+    imprime("A lista ordenada é {new}")
+    
+
+

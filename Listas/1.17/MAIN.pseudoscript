@@ -1,0 +1,9 @@
+
+array = [1 , 2, 3, 4, 5]
+array_new = []
+
+imprime("Array: {array}")
+
+array_new = array[::-1]
+
+imprime("O array ao contrario é {array}")

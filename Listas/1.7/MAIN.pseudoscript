@@ -1,0 +1,8 @@
+
+funcao Lista()
+    Lista1 = [1 , 2 , 3 , 4 , 5]
+    lista1.tamanho()
+
+Lista()
+imprime("O tamanho da sua lista é de : {Lista1}" )
+

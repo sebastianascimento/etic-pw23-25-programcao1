@@ -1,0 +1,10 @@
+
+#Logica
+
+funcao meses()
+    Lista.meses = [Janeiro , Feveiro , Março , Abril , Maio , junho , julho , Agosto , Setembro , Outubro , Novembro , Dezembro]
+
+
+#Execução 
+meses()
+imprime("A Lsita do mês: {Lista.meses}")

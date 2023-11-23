@@ -1,0 +1,8 @@
+
+Lista1 = [1 , 2 , 3 , 4 , 5]
+
+imprime("A sua lista é: {Lista1}")
+
+novalista=Lista1.tamanho() [:-1]
+
+imprime("A sua lista menos o ultimo array é: {novalista}")

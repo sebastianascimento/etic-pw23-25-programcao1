@@ -1,0 +1,12 @@
+
+    funcao palindromo()
+        cada i em [0..Lista.tamanho()]
+            se lista[i] != lista[lista.tamanho() -1 -i]
+
+
+Lista = [Ana]
+palindromo()
+    se palindromo == true
+        imprime("A Lista não é um palindromo")
+    senao 
+        imprime("A lista é um palindromo")

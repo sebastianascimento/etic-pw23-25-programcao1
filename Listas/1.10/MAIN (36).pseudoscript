@@ -1,0 +1,12 @@
+
+funcao array()
+    minhaLista = [ s ]
+
+    entrada("Quantos numeros quer na sua lista " , numero)
+        cada ( x = 0 ; x < numero ; x++)
+            imprime("Digite um numero: " , s)
+    
+
+array()
+imprime("A sua lista é {minhaLista}")
+

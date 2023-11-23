@@ -1,0 +1,23 @@
+
+    funcao pesquisa()
+        cada i [0..Lista.tamanho()]
+            se lista[i] == valor 
+                return i 
+            
+    
+
+
+Lista = [ 2 , 7 , 8 , 10 ,115]
+imprime("Bem-vindo a Peesquisa Linear")
+imprime("A Lista é : {Lista}")
+entrada("Digite um valor dentro da Lista: " , valor)
+    se valor nao esta em Lista:
+        imprime("O valor {valor} nao se ecnontra na Lista")
+    senao
+        pesquisa()
+            imprime("O valor {valor} está na posição {i}")
+
+
+    
+
+

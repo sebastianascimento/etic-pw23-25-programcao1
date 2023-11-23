@@ -1,0 +1,11 @@
+
+funcao repeticao()
+    minhaLista = [ 3, 3, 3 , 3 , 3]
+    minhaLista.tamanho()
+
+
+repeticao()
+imprime("A Lista é {minhalista}")
+
+
+    

@@ -1,0 +1,8 @@
+
+    funcao juntar()
+        resultado = Lista1 + Lista2
+
+Lista1 = ["Hello"]
+Lista2 = ["Zé"]
+juntar()
+imprime("A duas string juntas é igual a: {resultado}")
