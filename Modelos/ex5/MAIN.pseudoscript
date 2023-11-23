@@ -1,0 +1,59 @@
+
+#Lógica
+    funcao menu()
+        imprime("
+                Bem-vindo ao EditPlus
+                    Menu 
+            1- Criar Arquivo
+            2- Editar Arquivo
+            3- Salvar Arquivo
+            4- Ver este Menu
+            5- Ver os Arquivos no EditPlus
+            6- Sair do EditPlus 
+                ")
+
+modelo Simpletext:
+    construtor():
+        Simpletext.list = ()
+    
+    funcao Listtext():
+        cada chave , valor em Simpletext.list:
+            imprime("{chave} -> {valor}")
+        
+    funcao execute(opcao)
+        se opcao == 1
+            entrada("Nome do ficheiro: " , ficheiro)
+            entrada("Descrição do Ficheiro: " , descricao)
+            se ficheiro está em Simpletext.list.chaves()
+                imprime("Já existe um ficheiro com esse nome  no EditPlus. Tente novamnete")
+                return menu();
+            Simpletext.list[ficheiro] = descricao
+                imprime("O seu ficheiro foi criado com sucesso")
+        se opcao == 2 
+            Simpletext.Listtext()
+            entrada("Nome do ficheiro: " , ficheiro1)
+            se fichiero1 nao esta em Simpletext.list.chaves():
+                imprime("O Ficheiro nao existe. Tente de novo.")
+                return menu();           
+            entrada("Altere a descrição: " , descriçao1)
+            Simpletext.list[fichiero] = descricao1
+                imprime("O seu Ficheiro foi editado com sucesso.")
+        se opcao == 3 
+            entrada("Qual é o ficiheiro que quer salvar: " , arquivo)
+            se arquivo está em Simpletext.list()
+                imprime("Já existe um ficheiro com esse nome no EditPlus. Tente Novamente.")
+                return menu();
+            Simpletext.list[arquivo] = descricao
+                imprime("O seu fichiero foi salvo com sucesso")
+        se opcao == 5
+            Simpletext.Listtext()
+            imprime("O seu EditPlus é {Simpletext.Listtext()} ")
+        se opcao == 6
+                imprime("Até Breve!!!")
+                return;
+
+#Execução 
+ Simpletext()
+ menu()
+ entrada("Escolha uma Opção: " , opcao)
+ Simpletext.execute(opcao)

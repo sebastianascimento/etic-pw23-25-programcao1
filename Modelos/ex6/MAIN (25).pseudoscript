@@ -1,0 +1,46 @@
+  
+
+    funcao menu()
+        imprime("
+                    Bem-vindo ao BMI Calculator
+                        Menu
+           1- Ver o seu BMI
+           2- Sair do BMI Calculator
+                ")
+            
+modelo Indice()
+
+    funcao registo()
+        entrada("Qual é o seu peso " , peso)
+        entrada("Qual é a sua altura " , altura)
+        height = altura * altura
+        BMI = peso / height
+        imprime("O seu BMI é {BMI}")
+        se [BMI < 18.5]
+            imprime("O seu BMI é Underweight")
+        se [  BMI > 18.5 || BMI < 22.9]
+            imprime("O seu BMI é Normal")
+        se [ BMI > 23 || BMI < 24.9]
+            imprime("O seu BMI é Overweight")
+        se [BMI > 25 || BMI < 29.9]
+            imprime("O seu BMI é Obesity Class 1")
+        se [BMI > 30]
+            imprime("O seu BMI é Obesity Class 2")
+        
+
+
+
+    funcao executar()
+        se [opcao == 1]
+            imprime(registo())
+        se [opcao == 2]
+            imprime("Até uma proxima!!!")
+            return;
+        senao 
+            imprime("Opção invalida!! Tente Novamente.")
+
+
+Indice()
+menu()
+entrada("Opção : " , opcao)
+Indice.executar()

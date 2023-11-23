@@ -1,0 +1,46 @@
+
+    
+
+    
+    funcao menu()
+        imprime("
+                    Bem-vindo ao Guess the Number
+                            Menu
+                1 Para tentar acertar o numero
+                2 Para sair
+                ")
+
+modelo Guess():
+        construtor():
+    
+    funcao all()
+        aleatorio()
+            imprime("Você tem 5 tentativas.")
+             cada tent = 0 ; tent < 5 ; tent++
+                entrada("Digite um numero: " , numero)
+                    se[ numero > aleatorio()]
+                        imprime("O numero é mais baixo")
+                    senao[numero < aleatorio()]
+                        imprime("O numero é mais alto")
+                    senao 
+                        imprime("Boa!!! Acertaste o numero")
+                        return;
+            
+            imprime("Que pena você não acertou o numero.")
+            return menu();
+
+    funcao out()
+        imprime("Até Breve!!!")
+        return;
+
+    
+    funcao executar()
+        se [opcao == 1]
+            imprime(all())
+        senao 
+            imprime(out())
+
+Guess()
+menu()
+entrada("Opção: " , opcao)
+Guess.executar()

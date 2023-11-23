@@ -1,0 +1,54 @@
+
+#Logica
+funcao menu()
+    imprime("
+                Bem-vindo StockPro
+                    Menu
+            1- Adicionar item
+            2- Remover item
+            3- Listar item
+            4-Sair do StockPro
+            ")
+modelo Inventory()
+    construtor():
+        Inventory.list = () 
+
+        funcao Every():
+            cada chave, valor em Inventory.list:
+                imprime("{chave} -> {valor}")
+
+        funcao execute(opcao)
+            se opcao == 1
+                entrada("Como se chama o item que quer adicionar: " , item)
+                entrada("Qual é a quantidade que quer adicionar: " , quantidade)
+                    se item está em Inventory.list.chaves()
+                        imprime("Esse item já existe.")
+                        return menu();
+                    senao 
+                        Inventory.list[item] = quantidade
+                        imprime("O seu item foi adicionado com sucesso")
+            se opcao == 2
+                entrada("Como se chama o item que quer retirar: " , retirar)
+                    se retirar nao esta em Inventory.list
+                        imprime("Esse item não existe. Tente novamente")
+                        return menu();
+                senao 
+                    novalist = ()
+                    cada chave, valor em Inventory.list:
+                        se chave != retirar:
+                            novalist[chave] = valor
+                    Inventory.list = novalist
+                    imprime("O seu item foi removido com sucesso.")
+
+            se opcao == 3
+                Every()
+                imprime("A sua da StockPro é {Every}")
+            se opcao == 4 
+                imprime("Até a Próxima!!")
+                return;
+
+#Execução
+Inventory()
+menu()
+entrada("Escolha uma Opção: " , opcao)
+Inventory.execute(opcao)

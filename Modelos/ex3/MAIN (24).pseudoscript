@@ -1,0 +1,64 @@
+
+    funcao menu()
+        imprime("
+                    Bem-vindo To-Do List
+                            Menu
+                1 para adicionar tarefas
+                2 se quer concluir uma tarefa
+                3 para ver as suas tarefas pendentes
+                4 para sair da To-Do List
+                ")
+
+modelo ToDO():
+        construtor():
+        ToDO.list = ()
+
+    funcao ListaTar()
+        cada chave , valor em ToDO.list():
+            imprime("{chave} -> {valor}")
+
+    funcao add()
+        entrada("Numero da tarefa: " , numero)
+        entrada("Digite a tarefa que quer adicionar" , tarefa)
+            se numero esta em ToDO.list()
+                imprime("Está tarefa ja se encontra To-Do LIst. Tente Novamente")
+            senao
+                ToDO.list[numero] = tarefa
+                imprime("A sua tarefa foi adicionada com sucesso")
+
+    funcao concl()
+        ToDo.ListaTar()
+        entrada("Digite a tarefa que quer concluir" , concluir)
+            se concluir nao  esta em ToDo.list.chaves()
+                imprime("Esta tarefa nao existe em To-Do List")
+                return menu();
+            senao
+                listnew = ()
+                cada chave , valor em ToDO.list()
+                    se chave != concluir:
+                        listnew[chave] = valor
+                ToDO.list = listnew
+                imprime("A sua tarefa encontra-se concluida")
+
+    funcao look()
+        ToDO.ListaTar()
+        imprime("A sua To-Do List é {ToDO.ListaTar()}")
+
+    funcao out()
+        imprime("Até Breve")
+        return;
+        
+    funcao executar()
+        se [opcao == 1]
+            imprime(add())
+        senao [opcao == 2]
+            imprime(concl())
+        senao [opcao == 3]
+            imprime (look())
+        senao
+            imprime(out())
+        
+ToDO()
+menu()
+entrada("Opção: " , opcao)
+ToDO.executar()

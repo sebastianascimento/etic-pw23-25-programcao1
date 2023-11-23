@@ -1,0 +1,79 @@
+
+#Logica
+
+funcao menu()
+    imprime("
+                Bem-vindo ao BookPlus
+                        Menu
+            1- Verificar e Reservar quarto de hotel
+            2- Listar Reservas
+            3- Registar o check out
+            4- Adicionar quartos de Hotel
+            5- Sair do BookPlus
+            ")
+
+modelo Booking()
+        construtor():
+            Booking.reserva = ()
+            Booking.add = ()
+        
+        funcao execute()
+            se opcao == 1
+                entrada("Digite o hotel: " , sitio)
+                entrada("Digite as datas que gostaria de Resrvar:  " , data )
+                entrada("Digite as horas de check-in " , in)
+                entrada("Digite as horas de check-out " , out)
+                entrada("Digite quantos quartos são: " , quarto)
+                entrada("Digite o nome dá pessoa que fica na reserva: " , nome)
+                se sitio nao esta em Booking.add.chaves()
+                    imprime("Este Hotel no existe no BookingPlus")
+                senao
+                    se chaves nao esta em Booking.reservas.chaves()
+                        imprime("Datas disponiveis")
+                        entrada("Digite se gostaria de marcar S/N : " , gosta)
+                            se gosta = 'S' ou 's'
+                                Booking.reserva[sitio] [in] [out] [data] [quarto] =  nome
+                                imprime("Reserva em nome de {nome} feita com Sucesso.")
+                            senao                                 
+                                imprime(" OHHH. Até Breve !!!")
+                                return;
+                    senao 
+                        imprime("Datas indispóniveis")
+                        return menu();
+
+            se opcao == 2
+                imprime("Hóteis Reservados: ")
+                    cada chaves esta em Booking.reservas()
+                        imprime("Hotel no {sitio} , nas datas {datas} com {quarto} quartos.")
+            se opcao == 3
+                    Booking.reserva()
+                    entrada("Digite o hotel: " , spot)
+                    entrada("Digite as horas do check-out: " , check)
+                    se spot e check nao esta em Booking.reservas():
+                        imprime("Este horario nao existe . Tente novamente. ")
+                        return menu();
+                    senao
+                    novalist()
+                    cada chave, valor em Booking.reserva()
+                        se chave != spot || check
+                            novalist[chave] = valor
+                    Booking.reserva = novalist
+                    imprime("O seu Check-Out foi feito com sucesso.")
+            se opcao == 4
+            entrada("Qual é o hotel que gostaria de adicionar: " , hotel)
+                se chave esta em Booking.add()
+                    imprime("Este hotel já se encontra no BookPlus. ")
+                senao
+                    entrada("Qual é a capacidade do hotel: " , capacidade)
+                    Booking.add[hotel] =  capacidade
+                    imprime("O Hotel {hotel} adicionado com Sucesso .")
+
+            senao opcao == 5
+                imprime("Gosto em ver-te. Até a Proxima.")
+                return;
+
+#Execução 
+menu()
+entrada("Escolhe uma Opção: " , opcao)
+Booking.execute()
+

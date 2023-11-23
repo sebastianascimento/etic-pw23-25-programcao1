@@ -1,0 +1,61 @@
+
+    funcao menu()
+        imprime("
+                    Bem-vindo a calculator App
+                            Menu
+         1 -se quiser fazer uma adição
+         2 se qusier fazer uma subtração
+         3 se quiser fazer uma multiplicação
+         4 se quiser fazer uma divisão
+         5 se quiser sair do programa
+                ")
+
+modelo Calculator():
+        construtor():
+
+    funcao add()
+        entrada("Digite um valor: " , a)
+        entrada("Digite outro vaor: " , b)
+        resultado = a + b 
+        imprime("A soma entre {a} e {b} é igual {resultado}")
+
+    funcao sub()
+        entrada("Digite um valor: " , c)
+        entrada("Digite um valor: " , d)
+        resultado1 = c - d
+        imprime("A subtração entre {c} e {d} é igual a {resultado1}")
+
+    funcao multi()
+        entrada("Digite um valor: " , e)
+        entrada("Digite outro valor" , f)
+        resultado2 = e * f
+        imprime("A mutiplicação entre {e} e {f} é igual a {resultado 2}")
+
+    funcao div()
+        entrada("Digite um valor: " , g)
+        entrada("Digite outro valor: " , h)
+        resultado3 = g / h
+        imprime("A divisão entre {g} e {h} é igual a {resultado3}")
+
+    funcao out()
+        imprime("Até Breve")
+        return;
+    
+    
+    funcao executar()
+        se [opcao == 1]
+            imprime(add())
+        se [opcao == 2]
+            imprime(sub())
+        se [opcao == 3]
+            imprime(multi())
+        se [opcao == 4]
+            imprime(div())
+        se [opcao == 5]
+            imprime(out())
+
+
+
+menu()
+entrada("Opção: " , opcao)
+Calculator.executar(opcao)

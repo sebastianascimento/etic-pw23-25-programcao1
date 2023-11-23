@@ -1,0 +1,56 @@
+
+#Logica
+
+funcao menu()
+    imprime("
+                Bem-vindo ao MoedaExpressEuro
+                        Menu
+            1- Converter para Dollar 
+            2- Converter para Iene
+            3- Converter para Libra
+            4- Converter para Franco 
+            5- Converter para Real
+            6- Adicionar uma moeda
+            7- Sair do MoedaExpressEuro 
+            ")
+
+modelo Converter()
+
+        funcao impr()
+            imprime("Os {euro}€ é equivalente a {resultado}")
+
+        funcao execute(opcao)
+            entrada("Quantos euros gostaria de trocar: " , euro)
+                se opcao == 1 
+                    resultado = euro * 1.0702
+                    imprime(impr())
+                se opcao == 2
+                    resultado = euro * 159.87
+                    imprime(impr())    
+                se opcao == 3
+                    resultado = euro * 0.86983
+                    imprime(impr())
+                se opcao == 4 
+                    resultado = euro * 0.9625
+                    imprime(impr())
+                se opcao == 5
+                    resultado = euro * 5.2423
+                    imprime(impr())
+                se opcao == 6
+                    entrada("Qual é a moeda que gostaria de trocar: " , moeda)
+                    entrada ("Qual é a taxa da moeda: " , taxa)
+                    resultado = euro * taxa 
+                    imprime(impr())
+                se opcao == 7
+                    imprime("Até a Proxima!!!")
+                    return;
+
+
+
+
+#Execução
+Conventer()
+menu()
+entrada("Escolha uma opção: " , opcao)
+Converter.execute(opcao)
+    

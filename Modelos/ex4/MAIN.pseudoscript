@@ -1,0 +1,31 @@
+
+    
+    funcao menu()
+        imprime ("
+                    Bem-vindo ao Temperature Converter
+                                Menu            
+            1- Para converter de Celsius para Fahrenheit
+            2- Para converter de Fahrenheit para Celsius
+            3- Para sair da Temperature Converter
+                ")
+            
+  modelo Graus():
+            construtor()
+            
+    funcao executar(opcao)
+        se [ opcao == 1]
+             entrada("Digite um valor em  Celsius: " , a)
+             fahrenheit = (a * 9/5) + 32
+             imprime("O valor em Fahrenheit é igual a {fahrenheit}")
+        se [ opcao == 2]
+            entrada("Digite um valor em Fahrenheit: " , b)
+             Cel = (b - 32) * 5/9
+             imprime("O valor em Celsius é igual a {Celsius}")
+        senao
+            imprime("Até a próxima!!!")
+            return;
+
+Graus()
+menu()
+entrada("Opção: " , opcao)
+Graus.executar(opcao)

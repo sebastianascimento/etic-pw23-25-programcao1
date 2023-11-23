@@ -1,0 +1,160 @@
+
+#Lógica
+    funcao menu()
+        imprime("
+                  Bem-vindo ao SmartShow
+                        Menu
+                1- Criar jogador
+                2- Entrar e jogar SmartShow
+                3- Melhores Jogadores
+                4- Sair ao SmartShow 
+                ")
+
+modelo QuizGame()
+    construtor():
+        QuizGame.nome = (jogador)
+    
+    funcao execute(opcao)
+        se opcao == 1
+            imprime("Bora vamos criar um Jogador!")
+            entrada("Digite o seu nome de jogador: " , criar)
+            se criar está em QuizGame.nome():
+                imprime("Este nome já existe. Por favor tente outro nome")
+                return menu();
+            senao
+            QuizGame.nome[criar] = resultado
+            imprime("O seu jogador foi criado com sucesso.")
+        se opcao == 2
+            imprime("Bora jogar SmartShow!!")
+            entrada("Digite o seu nome: " , jogador)
+            se jogador nao esta em  Quizgame.nome() 
+                imprime("O seu nome nao foi encontrado. Por favor crie um jogador")
+            senao 
+                resultado = 0
+                imprime("
+                    1. Qual é o maior país do mundo em termos de área?
+                        A) Rússia
+                        B) Canadá
+                        C) China
+                        D) Brasil
+                        ")
+                entrada("Escolhe uma Opção: " , maior)
+                    se maior = 'A'ou 'a'
+                        imprime("A sua resposta está correta.")
+                        resultado += 3
+                    senao 
+                    imprime("A sua resposta está incorreta")
+                imprime("
+                    2. Qual é a capital da Itália?
+                        A) Nápoles
+                        B) Milão
+                        C) Roma
+                        D) Veneza
+                        ")
+                entrada("Escolhe uma Opção: " , capital)
+                    se capital = 'C' ou 'c'
+                        imprime("A sua resposta está correta")
+                        resultado += 3
+                    senao 
+                        imprime("A sua resposta está incorreta")
+                imprime("
+                    3. Qual é o rio mais longo do mundo?
+                        A) Amazonas
+                        B) Nilo
+                        C) Mississippi
+                        D) Yangtzé
+                        ")
+                entrada("Escolhe uma Opção: " , rio)
+                    se rio = 'B' ou 'b'
+                        imprime("A sua resposta está correta")
+                        resultado += 3
+                    senao 
+                        imprime("A sua resposta está incorreta")
+                imprime("
+                    4. Qual é a cidade mais populosa dos Estados Unidos?
+                        A) Los Angeles
+                        B) Chicago
+                        C) Houston
+                        D) Nova Iorque
+                        ")
+                entrada("Escolha Opção: " , cidade)
+                    se cidade = 'D' ou 'd'
+                        imprime("A sua resposta está correta")
+                        resultado += 3
+                    senao
+                        imprime("A sua resposta está incorreta")
+                imprime("
+                    5. Quais são os cinco continentes do mundo?
+                        A) África, América do Sul, Ásia, Austrália, Europa
+                        B) América do Norte, América do Sul, Ásia, Antártica, Europa
+                        C) América do Norte, América do Sul, África, Ásia, Europa
+                        D) África, América do Norte, Ásia, Austrália, Europa
+                        ")
+                entrada("Escolha uma Opção: " , continente)
+                    se continente = 'C' ou 'c'
+                        imprime("A sua resposta está correta")
+                        resultado += 3
+                    senao 
+                        imprime("A sua resposta está incorreta")
+                imprime("
+                    6. Qual é o deserto mais seco do planeta?
+                        A) Saara
+                        B) Atacama
+                        C) Kalahari
+                        D) Gobi
+                        ")
+                entrada("Escolhe uma Opção: " , deserto)
+                    se deserto = 'B' ou 'b'
+                        imprime("A sua resposta está correta")
+                        resultado += 3
+                    senao 
+                        imprime("A sua resposta está incorreta")
+                imprime("
+                    7. Qual é a montanha mais alta do mundo?
+                        A) Everest
+                        B) Kilimanjaro
+                        C) Montanha Denali
+                        D) Montanha Elbrus
+                        ")
+                entrada("Escolhe uma Opção: " , montanha)
+                    se montanha = 'A' ou 'a'
+                        imprime("A sua resposta está correta")
+                        resultado += 3
+                    senao 
+                        imprime("A sua resposta está incorreta")
+                imprime("
+                    8.  Qual é o país que possui a maior quantidade de ilhas no mundo?
+                        A) Maldivas
+                        B) Filipinas
+                        C) Japão
+                        D) Indonésia        
+                        ")
+                entrada("Escolha uma Opção: " ,  pais)
+                    se pais = 'D' ou 'd'
+                        imprime("A sua repsosta está correta")
+                        resultado += 3
+                    senao 
+                        imprime("A sua resposta está incorreta")
+        se opcao == 3
+            QuizGame.novo = ()
+            listOv = QuizGame.nome.chaves()
+            cada i em [0...listaOv.tamanho()]
+                cada j em [i+1 ... listOv.tamanho()]
+                    se listOv[i] > listOV[j]
+                        top = listOv[j]
+                        listaOv[j] = listaOv[i]
+                        listaOV[i] = top
+            cada jogador em listOv:
+                QuizGame.novo[resultado] = QuizGame.nome[resultado]
+            QuizGame.nome = QuizGame.novo
+        se opcao == 4 
+            imprime("Até Breve!!")
+            return;
+
+#Execução
+
+QuizGame()
+menu()
+entrada("Escolhe opção: " , opcao)
+QuizGame.execute(opcao)
+
