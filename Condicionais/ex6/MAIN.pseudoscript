@@ -1,0 +1,9 @@
+
+entrada("Digite um numero " , n)
+
+se (n % 5 = 0)
+    imprime("Este numero é mutiplo de 5 ")
+senao 
+    imprime("Este numero não é mutiplo 5" )
+
+    

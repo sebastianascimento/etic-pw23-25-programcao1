@@ -1,0 +1,13 @@
+
+
+    funcao palindromo()
+        cada caracter em [palavra]
+            se palavra[i] != [palavra -1 -i]
+
+
+palavra = "Ana" 
+palindromo()
+    se palindromo == true
+        imprime("A Lista não é um palindromo")
+    senao 
+        imprime("A lista é um palindromo")

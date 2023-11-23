@@ -1,0 +1,8 @@
+
+entrada("Digite um numero: " , n)
+
+se [ n % 3 == 0 || n % 5 == 0]
+    imprime("O numero é divisivel por 3 e por 5")
+senao 
+    imprime("O valor não é divisivel por 3 e por 5")
+    

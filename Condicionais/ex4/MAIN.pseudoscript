@@ -1,0 +1,12 @@
+
+
+entrada("Digite um numero" , x)
+entrada("Digite um numero" , z)
+
+se ( x > z)
+    imprime ("O maior numero é: {x}")
+senao ( x = z)
+    imprime ("Erro")
+senao
+    imprime("O maior numero é : {z}")
+    

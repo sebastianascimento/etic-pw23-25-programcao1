@@ -1,0 +1,19 @@
+
+funcao angulo ()
+    resultado = a + b + c
+    retorne resultado 
+
+
+entrada("Digite um angulo " , a)
+entrada("Digite outro angulo " , b)
+entrada("Digite outro angulo " , c)
+angulo()
+se [ resultado != 180]
+    imprime ("Nao é triangulo")
+senao[ a = 90 ou b = 90 ou c = 90]
+    imprime("É um triangulo retangulo")
+senao[ a > 90 ou b > 90 ou c > 90 ]
+    imprime ("É um triangulo obtusangulo ")
+senao[ a < 90 || b < 90 || c < 90]
+    imprime("É um triangulo acutangulo")
+

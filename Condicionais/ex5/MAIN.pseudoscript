@@ -1,0 +1,15 @@
+
+
+entrada("Digite uma nota: " , n)
+entrada("Digite uma nota: " , z)
+entrada("Digite uma nota: " , x)
+
+funcao somar(n , z, x)
+    soma = (n + z + x) 
+    media = soma / 3
+    retorne media;
+
+se (media >= 7)
+    imprime("Aprovado")
+senao 
+    imprime("Reprovado")

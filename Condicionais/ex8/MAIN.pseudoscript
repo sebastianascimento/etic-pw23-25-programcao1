@@ -1,0 +1,17 @@
+
+entrada("Digite uma letra " , n)
+
+se (n = a)
+    imrprime ("É vogal")
+se ( n = e)
+    imrprime("É vogal")
+se ( n = i)
+    imrprime("É vogal")
+se ( n = o)
+    imprime("É vogal")
+se ( n = u)
+    imrpime("É vogal")
+senao 
+    imrpime ("É consoante")
+    
+

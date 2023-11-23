@@ -1,0 +1,10 @@
+
+
+entrada ("Digite o preço do produto: " , n)
+
+se [ n > 100]
+    x = ( n * (10/100) )
+    imprime ("O preço do produto fica a ", x )
+senao [ n <= 100]
+    imprime("O valor do produto fica a" , n)
+

@@ -1,0 +1,19 @@
+
+entrada("Digite o valor do seu salario: ", n)
+
+funcao sal()
+    sal = n * (11/100)
+    retorne sal
+
+funcao maxsa()
+    max= n * (27.5/100) 
+    retorne max
+
+
+se [ n <= 1100 ]
+    sal()
+    imprime("O valor de desconto é de " , sal )
+senao [ n > 1100]
+    maxsa()
+    imprime("o valor de desconto e de " , max )
+

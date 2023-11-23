@@ -1,0 +1,8 @@
+
+entrada("Digite a sua idade: " , n)
+
+se [n >= 16]
+    imprime("Já pode votar")
+senao
+    imprime("Não pode votar")
+

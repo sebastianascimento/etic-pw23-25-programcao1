@@ -1,0 +1,14 @@
+
+entrada ("Digite um numero ? " , n )
+
+funcao perfeito()
+    resultado = raiz quadrada de n 
+    retorne resultado;
+
+entrada ("Digite um numero ? " , n )
+perfeito()
+se [ resultado % = 0 ]
+    imprime("O numero é perfeito")
+senao
+    imprime("O numero não é perfeito")
+

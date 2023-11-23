@@ -1,0 +1,14 @@
+
+funcao raiz ()
+    resultado = raiz quadrada de n 
+    retorne resultado
+
+
+entrada("Digite um numero: " , n)
+raiz()
+se [ n > 0 ]
+    imprime(" O valor e de " + resultado)
+senao 
+    imprime("Erro")
+
+

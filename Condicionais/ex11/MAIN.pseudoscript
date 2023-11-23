@@ -1,0 +1,22 @@
+
+
+entrada("Digite o seu peso: " , p)
+entrada("Digite a sua altura em metros" , a)
+
+funcao IMC()
+    resultado = p / (a * a)
+    retorne resultado
+
+se [IMC < 18.5 ]
+    imprime("Está a baixo do peso ")
+senao [IMC >= 18.5 || IMC <= 24.9]
+    imprime("Está no peso ideal")
+senao [IMC <= 25 || IMC >= 29.9]
+    imprime("Está com peso a mais")
+senao [IMC <= 30 || IMC >= 34.9]
+    imprime("Está com obesidade grau 1")
+senao [IMC <= 35 || IMC >= 39.9]
+    imprime ("Está com obesidade grau 2")
+senao [IMC >= 40]
+    imprime ("Está com obesidade grau 3")
+    

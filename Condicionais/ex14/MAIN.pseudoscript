@@ -1,0 +1,18 @@
+
+entrada("Digite um numero " , n)
+
+
+funcao perfeito()
+    resultado = n % z 
+    retorne resultado
+
+se [resultado = 0 ]
+    
+enquanto ( x = 1 ; x < n ; z++ )
+    se [ resultado = 0 ]
+        resultado + resultado
+    
+se [ resultado = n ]
+    imprime("O numero é perfeito ")
+senao 
+    imprime("O numero nao e perfeito")

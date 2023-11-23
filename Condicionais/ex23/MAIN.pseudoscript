@@ -1,0 +1,10 @@
+
+    funcao fibonaci()
+        seqeuncia = numero - 1 + numero - 2  
+
+entrada("Digite um numero " , numero)
+fibonaci()
+    se [numero - 1 == seqeuncia]
+        imprime("O numero é um numero de Fibonacci.")
+    senao
+        imprime("O numero não é um numero de Fibonacci.")

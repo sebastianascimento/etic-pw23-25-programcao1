@@ -1,0 +1,14 @@
+
+    funcao primo()
+        resultado = 0
+            cada numero em [2..valor]
+                se x % numero == 0
+                    resultado = primo + 1
+            return primo
+
+entrada("DIgite um numero: " , valor)
+se primo():
+    imprime("O {valor} é numero primo")
+senao 
+    imprime("O {valor} não é numero primo.")
+

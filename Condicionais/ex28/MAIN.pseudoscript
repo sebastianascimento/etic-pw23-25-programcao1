@@ -1,0 +1,15 @@
+
+    funcao mersene()
+        numero = 2 ^ primo - 1
+        returne numero
+
+
+
+entrada("Digite um numero primo: " , primo)
+entrada("Digite um numero: " , numero)
+mersene()
+    se [numero == true]
+        imprime("O valor é um numero Primo Mersene")
+    senao
+        imprime("O valor não é um numero Primo Mersene")
+

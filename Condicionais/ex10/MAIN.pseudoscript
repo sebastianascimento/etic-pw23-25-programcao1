@@ -1,0 +1,12 @@
+
+entrada("Digite um valor: " , n)
+entrada("Digite outro valor " , x)
+entrada("Digite outro valor " , y)
+
+se [ n == x || x == y ]
+    imprime("O trinagulo é isósceles ")
+senao [ n == x]
+    imprime("O triangulo é equilatero")
+senao 
+    imprime("O trinagulo é escaleno")
+    

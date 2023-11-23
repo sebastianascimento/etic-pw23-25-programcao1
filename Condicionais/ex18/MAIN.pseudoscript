@@ -1,0 +1,11 @@
+
+entrada("Digite um numero " n )
+    resultado = (n  % 2 )
+        
+
+se [ resultado == 0]
+    imprime("O numero é potencia de 2")
+senao
+    imprime("O numero nao é potencia de 2 ")
+
+

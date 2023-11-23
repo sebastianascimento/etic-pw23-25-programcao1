@@ -1,0 +1,22 @@
+
+    funcao fermat()
+        cada i [0..primo]
+            resultado = 2 ^ 2 ^ i + 1
+    return resultado;
+
+
+
+
+imprime("Bem-vindo ao Numero de Fermat ")
+entrada("Escolha um numero: " ,  primo)
+entrada("Digite um numero: " , numero)
+    se primo || numero < 0
+        imprime("Esses valores sao inexistentes nos numeros de Fermat")
+    senao 
+        fermat()
+        se resultado == numero
+            imprime("O numero que escolheu faz parte dos numeros de Fermat ")
+        senao 
+            imprime("O numero que escolheu nao faz parte dos numeros de Fermat.")
+
+

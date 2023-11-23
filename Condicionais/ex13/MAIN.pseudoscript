@@ -1,0 +1,11 @@
+
+entrada("Quantos quilometros percorreu nesta viagem: " , n)
+
+preco = 1.5
+
+
+funcao viagem ()
+    resultado = n * preco
+    retorne resultado
+
+imprime("O valor total a pagar é  {resultado}")

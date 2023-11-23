@@ -1,0 +1,10 @@
+
+
+
+entrada("Digite um numero" , n)
+
+funcao start()
+    se (n % 2 = 0)
+        imprime("O numero é par")
+    senao
+        imprime("O numero é impar") 

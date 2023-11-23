@@ -1,0 +1,11 @@
+
+entrada("Digite um numero ?" , x)
+
+se (x < o)
+    imprime ("O numero é negativo")
+se (x = 0)
+    imrpime ("O numero é zero")
+se (x > 0)
+    imprime ("O numero é positivo")
+
+

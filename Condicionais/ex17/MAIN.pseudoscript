@@ -1,0 +1,12 @@
+
+entrada("Digite a sua idade: " , n)
+
+se [ n <= 12]
+    imprime("A pessoa é criança")
+senao [n >= 13 || n <= 17]
+    imprime("A pessoa é adolescente")
+senao [ n >= 18 || n <= 59]
+    imprime("A pessoa é adulto")
+senao [ n >=  60]
+    imprime("A pessoa é idosa")
+    

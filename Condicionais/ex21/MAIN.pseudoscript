@@ -1,0 +1,11 @@
+
+funcao triangular( )
+    resultado = (n*(n+1)) /2
+
+entrada("Digite um numero: " numero)
+trinagular()
+se [resultado == numero]
+    imprime("Este numero que escolheu é triangular")
+senao 
+    imprime("Este numero nao é trinagular")
+    

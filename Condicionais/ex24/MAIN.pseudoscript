@@ -1,0 +1,12 @@
+
+    funcao armstrong():
+        a = ano /100
+        b = (ano - a * 100 - b * 10 )
+        c = (ano - a * 100 - b * 10  )
+        d = a * a * a + b * b * b + c * c * c 
+
+entrada("Digite um ano: " , ano)
+    se [ano == d]
+        imprime("O ano que digitou é um numero Armstrong. ")
+    senao 
+        imprime("O ano que digitou nao é um numero Armstrong.")

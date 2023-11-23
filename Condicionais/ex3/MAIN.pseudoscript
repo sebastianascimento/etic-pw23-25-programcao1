@@ -1,0 +1,8 @@
+
+entrada("Digite um numero" , z);
+
+se (z % 4 = 0)
+    imprime("Este ano é bissexto")
+senao 
+    imprime("Este ano não é bissexto")
+    

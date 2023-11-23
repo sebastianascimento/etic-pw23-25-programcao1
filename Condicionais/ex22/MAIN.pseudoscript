@@ -1,0 +1,11 @@
+
+entrada("Quantos dias vai andar com o carro?" , d)
+entrada("Quantos quilometros fez com o carro?" , q)
+
+funcao viagem ()
+    resultado = (d * 50) + (q * 0.2)
+    retorne resultado
+
+imprime("O valor total a pagar e de {resultado}")
+
+ 

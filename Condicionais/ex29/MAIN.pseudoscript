@@ -1,0 +1,13 @@
+
+    funcao fatorial()
+        se valor < 0  
+            imprime("Nao existem numeros fatoriais negativos")
+        senao
+            cada i de [1 ate valor]
+                resultado *= i
+
+entrada("Digire um numero: " , valor)
+fatorial()
+imprime("O fatorial de {valor} é {resultado}")
+
+
